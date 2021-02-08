@@ -1,0 +1,43 @@
+.dot{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.incomplete{
+    background-color: rgb(216, 24, 24);
+}
+
+.completed{
+    background-color: rgb(24, 216, 33);
+}
+
+.todos-list{
+    list-style-type: none;
+}
+
+.todos-list li{
+    width: 50%;
+    border: 1px solid;
+    margin: 10px;
+}
+
+.disable{
+    display: none;
+}
+ .to-do{
+     display: flex;
+     padding: 10px;
+ }
+ .head{
+     display: flex;
+     position: relative;
+ }
+ .btn-add-todo{
+    position: absolute;
+    right: 0;
+    top: 13px;
+ }

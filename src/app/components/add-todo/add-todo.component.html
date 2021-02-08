@@ -1,0 +1,16 @@
+<div class="row">
+    <div class="col-md-6 offset-md-3 mt-4">
+        <h3>Add Task</h3>
+        <form #f="ngForm"
+        (ngSubmit)="onSubmit(f)">
+            <div class="mb-3">
+                <label for="TaskTitle" class="form-label">Title</label>
+                <input type="text" name="title"
+                ngModel
+                required
+                #username="ngModel" class="form-control" id="TaskTitle" placeholder="Enter task's title">
+              </div>
+            <button class="btn btn-primary" [disabled]="f.invalid" >Add</button>
+          </form>
+    </div>
+</div>
